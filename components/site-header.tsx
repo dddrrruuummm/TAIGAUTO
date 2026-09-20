@@ -1,31 +1,25 @@
 import Link from "next/link";
-import { Gauge } from "lucide-react";
-import { navItems, site } from "@/lib/site";
-import { Button } from "@/components/ui/button";
+import { ArrowUpRight } from "lucide-react";
+import { navItems } from "@/lib/site";
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-ink/10 bg-pearl/90 backdrop-blur">
-      <div className="container-page flex min-h-16 items-center justify-between gap-4">
-        <Link href="/" className="flex items-center gap-2 font-serif text-xl font-bold text-ink">
-          <span className="grid size-9 place-items-center rounded-md bg-wine text-white">
-            <Gauge size={19} aria-hidden="true" />
-          </span>
-          {site.name}
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-ink text-white">
+      <div className="container-page flex min-h-[72px] items-stretch justify-between">
+        <Link href="/" className="flex items-center gap-3 pr-5" aria-label="TAIGAUTO home">
+          <span className="grid size-10 place-items-center bg-wine text-sm font-black">TA</span>
+          <span className="text-xl font-black tracking-[0.08em]">TAIGAUTO</span>
         </Link>
-        <nav className="hidden items-center gap-6 text-sm font-semibold text-ink/75 md:flex">
-          {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="hover:text-wine">
+        <nav className="hidden items-center gap-7 text-[11px] font-bold uppercase tracking-[0.12em] lg:flex">
+          {navItems.slice(0, 3).map((item) => (
+            <Link key={item.href} href={item.href} className="text-white/65 transition hover:text-wine">
               {item.label}
             </Link>
           ))}
         </nav>
-        <Button href="/contact" className="hidden md:inline-flex">
-          Component Inquiry
-        </Button>
-        <Button href="/contact" variant="secondary" className="md:hidden">
-          Contact
-        </Button>
+        <Link href="/contact" className="flex min-w-28 items-center justify-center gap-2 border-l border-white/10 px-4 text-xs font-black uppercase tracking-[0.12em] transition hover:bg-wine sm:min-w-44">
+          Start a brief <ArrowUpRight size={16} />
+        </Link>
       </div>
     </header>
   );

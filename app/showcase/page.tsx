@@ -2,26 +2,13 @@ import type { Metadata } from "next";
 import { ProductCard } from "@/components/product-card";
 import { products } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: "Showcase",
-  description: "Explore TAIGAUTO's automotive component focus for braking, lighting, electrical, and chassis systems."
-};
+export const metadata: Metadata = { title: "Component Index", description: "Review ten TAIGAUTO automotive component directions for sourcing and trade conversations." };
 
 export default function ShowcasePage() {
   return (
-    <section className="bg-white py-16">
-      <div className="container-page">
-        <p className="eyebrow text-wine">Component Focus</p>
-        <h1 className="mt-4 max-w-3xl text-5xl font-bold leading-tight">Automotive component categories for buyers, suppliers, and trade partners.</h1>
-        <p className="mt-5 max-w-2xl leading-7 text-ink/70">
-          This showcase presents component directions rather than a live inventory catalog. Each image and description is intentionally modular, ready to be replaced with supplier-approved photography, part numbers, and final programs as they are developed.
-        </p>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {products.map((product) => (
-            <ProductCard key={product.name} product={product} />
-          ))}
-        </div>
-      </div>
-    </section>
+    <main className="tech-grid bg-pearl pb-20">
+      <section className="bg-wine py-14 text-white"><div className="container-page grid gap-8 lg:grid-cols-[1.3fr_0.7fr] lg:items-end"><div><p className="eyebrow text-ink">Component Index / Revision 01</p><h1 className="mt-5 text-6xl font-black uppercase leading-[0.9] sm:text-7xl">Ten systems.<br />One clear view.</h1></div><p className="max-w-lg border-l border-white/40 pl-6 leading-7 text-white/75">This is a program index, not live inventory. Each category can be refined around application, specification, volume, packaging, and market requirements.</p></div></section>
+      <section className="container-page pt-12"><div className="mb-8 flex items-center justify-between border-b-2 border-ink pb-4 text-xs font-black uppercase tracking-[0.13em]"><span>TAIGAUTO / Automotive Components</span><span>Records 01-10</span></div><div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">{products.map((product) => <ProductCard key={product.code} product={product} />)}</div></section>
+    </main>
   );
 }

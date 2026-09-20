@@ -1,39 +1,39 @@
 import Link from "next/link";
-import { Mail, MapPin } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { navItems, site } from "@/lib/site";
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-ink/10 bg-ink text-white">
-      <div className="container-page grid gap-10 py-12 md:grid-cols-[1.2fr_0.8fr_0.8fr]">
+    <footer className="bg-ink text-white">
+      <div className="h-2 bg-wine" />
+      <div className="container-page grid gap-10 py-12 lg:grid-cols-[1.4fr_0.7fr_0.9fr]">
         <div>
-          <p className="font-serif text-2xl font-bold">{site.name}</p>
-          <p className="mt-4 max-w-md text-sm leading-6 text-white/70">
-            An Ontario company positioned for automotive component sourcing, supplier coordination, and cross-border trade conversations.
-          </p>
+          <div className="flex items-center gap-3">
+            <span className="grid size-11 place-items-center bg-wine text-sm font-black">TA</span>
+            <p className="text-2xl font-black tracking-[0.1em]">TAIGAUTO</p>
+          </div>
+          <p className="mt-5 max-w-md text-sm leading-6 text-white/55">Component programs and cross-border coordination for automotive buyers, distributors, and supply partners.</p>
         </div>
         <div>
-          <p className="text-sm font-bold uppercase tracking-widest text-white/60">Explore</p>
-          <div className="mt-4 grid gap-2 text-sm text-white/75">
-            {navItems.map((item) => (
-              <Link key={item.href} href={item.href} className="hover:text-white">
-                {item.label}
-              </Link>
-            ))}
-            <Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
+          <p className="eyebrow text-wine">Index</p>
+          <div className="mt-4 grid gap-2 text-sm text-white/65">
+            {navItems.map((item) => <Link key={item.href} href={item.href} className="hover:text-white">{item.label}</Link>)}
+            <Link href="/privacy-policy" className="hover:text-white">Privacy</Link>
             <Link href="/terms" className="hover:text-white">Terms</Link>
           </div>
         </div>
         <div>
-          <p className="text-sm font-bold uppercase tracking-widest text-white/60">Contact</p>
-          <div className="mt-4 grid gap-3 text-sm text-white/75">
-            <a className="flex gap-2 hover:text-white" href={`mailto:${site.email}`}><Mail size={16} />{site.email}</a>
-            <p className="flex gap-2"><MapPin size={16} />Based in {site.address.city}</p>
-          </div>
+          <p className="eyebrow text-wine">Dispatch</p>
+          <a href={`mailto:${site.email}`} className="mt-4 flex items-center justify-between border-b border-white/20 pb-3 text-lg font-bold hover:text-wine">
+            {site.email}<ArrowUpRight size={18} />
+          </a>
+          <p className="mt-4 text-sm text-white/55">{site.address.city}, {site.address.state}, {site.address.country}</p>
         </div>
       </div>
-      <div className="border-t border-white/10 py-5 text-center text-xs text-white/50">
-        © 2026 {site.legalName}. All rights reserved.
+      <div className="border-t border-white/10 py-5">
+        <div className="container-page flex flex-wrap justify-between gap-2 text-[11px] uppercase tracking-[0.12em] text-white/40">
+          <span>© 2026 {site.legalName}</span><span>Automotive components / Ontario</span>
+        </div>
       </div>
     </footer>
   );
