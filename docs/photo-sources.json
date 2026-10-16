@@ -1,0 +1,98 @@
+[
+  {
+    "file": "public/photos/workshop.webp",
+    "source": "https://www.pexels.com/photo/4315574/",
+    "download": "https://images.pexels.com/photos/4315574/pexels-photo-4315574.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "license": "https://www.pexels.com/license/",
+    "retrieved": "2026-10-16",
+    "use": "Category/editorial scene, not company facilities, team, completed work, or verified inventory."
+  },
+  {
+    "file": "public/gallery/brake-disc.webp",
+    "title": "Disc brake assembly",
+    "source": "https://www.pexels.com/photo/a-close-up-shot-of-a-vehicle-disc-brake-6870299/",
+    "download": "https://images.pexels.com/photos/6870299/pexels-photo-6870299.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    "license": "https://www.pexels.com/license/",
+    "retrieved": "2026-10-16",
+    "use": "Editorial category demonstration. Not claimed company products, stock, staff, or completed projects.",
+    "generation": "none; real source photography",
+    "subject": "Rotor, hub, and caliper details in a service setting."
+  },
+  {
+    "file": "public/gallery/air-filter.webp",
+    "title": "Air filtration",
+    "source": "https://www.pexels.com/photo/air-filter-in-close-up-photography-11074558/",
+    "download": "https://images.pexels.com/photos/11074558/pexels-photo-11074558.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    "license": "https://www.pexels.com/license/",
+    "retrieved": "2026-10-16",
+    "use": "Editorial category demonstration. Not claimed company products, stock, staff, or completed projects.",
+    "generation": "none; real source photography",
+    "subject": "A closer view of filter construction and intake components."
+  },
+  {
+    "file": "public/gallery/headlight.webp",
+    "title": "Forward lighting",
+    "source": "https://www.pexels.com/photo/vehicle-headlight-1842869/",
+    "download": "https://images.pexels.com/photos/1842869/pexels-photo-1842869.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    "license": "https://www.pexels.com/license/",
+    "retrieved": "2026-10-16",
+    "use": "Editorial category demonstration. Not claimed company products, stock, staff, or completed projects.",
+    "generation": "none; real source photography",
+    "subject": "Headlamp form, lens, and vehicle integration."
+  },
+  {
+    "file": "public/gallery/suspension.webp",
+    "title": "Suspension hardware",
+    "source": "https://www.pexels.com/photo/detailed-view-of-car-suspension-system-34277924/",
+    "download": "https://images.pexels.com/photos/34277924/pexels-photo-34277924.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    "license": "https://www.pexels.com/license/",
+    "retrieved": "2026-10-16",
+    "use": "Editorial category demonstration. Not claimed company products, stock, staff, or completed projects.",
+    "generation": "none; real source photography",
+    "subject": "Components that connect the wheel assembly and vehicle body."
+  },
+  {
+    "file": "public/gallery/engine-parts.webp",
+    "title": "Engine components",
+    "source": "https://www.pexels.com/photo/car-parts-and-engine-18247301/",
+    "download": "https://images.pexels.com/photos/18247301/pexels-photo-18247301.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    "license": "https://www.pexels.com/license/",
+    "retrieved": "2026-10-16",
+    "use": "Editorial category demonstration. Not claimed company products, stock, staff, or completed projects.",
+    "generation": "none; real source photography",
+    "subject": "Mechanical assemblies and service interfaces."
+  },
+  {
+    "file": "public/gallery/shock-absorber.webp",
+    "title": "Damping components",
+    "source": "https://www.pexels.com/photo/close-up-of-off-road-vehicle-suspension-system-38084839/",
+    "download": "https://images.pexels.com/photos/38084839/pexels-photo-38084839.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    "license": "https://www.pexels.com/license/",
+    "retrieved": "2026-10-16",
+    "use": "Editorial category demonstration. Not claimed company products, stock, staff, or completed projects.",
+    "generation": "none; real source photography",
+    "subject": "A close view of suspension and damping hardware."
+  },
+  {
+    "file": "public/gallery/alternator.webp",
+    "title": "Electrical connections",
+    "source": "https://www.pexels.com/photo/wires-in-engine-18617941/",
+    "download": "https://images.pexels.com/photos/18617941/pexels-photo-18617941.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    "license": "https://www.pexels.com/license/",
+    "retrieved": "2026-10-16",
+    "use": "Editorial category demonstration. Not claimed company products, stock, staff, or completed projects.",
+    "generation": "none; real source photography",
+    "subject": "Wiring and connections within a vehicle engine compartment."
+  },
+  {
+    "file": "public/gallery/engine-bay.webp",
+    "title": "Under-hood systems",
+    "source": "https://www.pexels.com/photo/close-up-of-an-engine-bay-21715608/",
+    "download": "https://images.pexels.com/photos/21715608/pexels-photo-21715608.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    "license": "https://www.pexels.com/license/",
+    "retrieved": "2026-10-16",
+    "use": "Editorial category demonstration. Not claimed company products, stock, staff, or completed projects.",
+    "generation": "none; real source photography",
+    "subject": "Intake, routing, and the relationship between assemblies."
+  }
+]

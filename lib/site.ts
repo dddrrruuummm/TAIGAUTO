@@ -3,7 +3,6 @@ export const site = {
   legalName: "TAIGAUTO CO., LTD.",
   url: "https://taigauto.org",
   email: "info@taigauto.org",
-  phone: "+1 (289) 555-0148",
   address: { city: "Hamilton", state: "ON", country: "Canada" },
 };
 

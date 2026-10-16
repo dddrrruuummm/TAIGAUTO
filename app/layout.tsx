@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description: "A clear starting point for automotive component sourcing, supplier coordination, and trade conversations.",
     url: site.url,
     siteName: site.name,
-    images: [{ url: "/images/automotive-supply-hero.png", width: 1536, height: 1024, alt: "TAIGAUTO automotive component supply workspace" }],
+    images: [{ url: "/photos/workshop.webp", width: 1536, height: 1024, alt: "TAIGAUTO automotive component supply workspace" }],
     locale: "en_US",
     type: "website"
   },
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "TAIGAUTO | Automotive Components & Trade",
     description: "A clear starting point for automotive component sourcing, supplier coordination, and trade conversations.",
-    images: ["/images/automotive-supply-hero.png"]
+    images: ["/photos/workshop.webp"]
   },
   alternates: {
     canonical: site.url
@@ -45,11 +45,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   };
 
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
         <SiteHeader />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <SiteFooter />
       </body>
     </html>

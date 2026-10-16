@@ -1,26 +1,4 @@
-import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
-import { navItems } from "@/lib/site";
-
-export function SiteHeader() {
-  return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-ink text-white">
-      <div className="container-page flex min-h-[72px] items-stretch justify-between">
-        <Link href="/" className="flex items-center gap-3 pr-5" aria-label="TAIGAUTO home">
-          <span className="grid size-10 place-items-center bg-wine text-sm font-black">TA</span>
-          <span className="text-xl font-black tracking-[0.08em]">TAIGAUTO</span>
-        </Link>
-        <nav className="hidden items-center gap-7 text-[11px] font-bold uppercase tracking-[0.12em] lg:flex">
-          {navItems.slice(0, 3).map((item) => (
-            <Link key={item.href} href={item.href} className="text-white/65 transition hover:text-wine">
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-        <Link href="/contact" className="flex min-w-28 items-center justify-center gap-2 border-l border-white/10 px-4 text-xs font-black uppercase tracking-[0.12em] transition hover:bg-wine sm:min-w-44">
-          Start a brief <ArrowUpRight size={16} />
-        </Link>
-      </div>
-    </header>
-  );
-}
+import Image from "next/image";import Link from "next/link";import{site,navItems}from"@/lib/site";
+function MobileMenu(){return <details className="mobile-menu"><summary>Menu</summary><nav id="mobile-navigation" aria-label="Mobile navigation">{navItems.map(i=><a key={i.href} href={i.href}>{i.label}</a>)}</nav></details>}
+function Brand(){return <Link className="brand" href="/" aria-label={`${site.name} home`}><Image src="/brand-mark.svg" alt="" width={40} height={40} priority/><span>{site.name}</span></Link>}
+export function SiteHeader(){return <header className="site-header ta-header"><a className="skip-link" href="#main-content">Skip to content</a><div className="container-page ta-header-top"><Brand/><div><span>Automotive components · Hamilton, Ontario</span><Link href="/contact">Contact TAIGAUTO ↗</Link></div><MobileMenu/></div><div className="ta-navigation"><div className="container-page"><nav aria-label="Main navigation"><Link href="/showcase">Product range</Link><Link href="/services">Sourcing capabilities</Link><Link href="/about">Company</Link></nav><Link href="/contact">Send a component brief ↗</Link></div></div></header>}
