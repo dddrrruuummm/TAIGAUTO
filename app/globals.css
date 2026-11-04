@@ -31,3 +31,94 @@
 
 .menu-toggle{display:flex;align-items:center;justify-content:center;min-height:44px;border:0;padding:0;background:transparent;color:inherit;font:inherit;cursor:pointer}.site-header .mobile-menu nav{display:grid!important}.mobile-menu[aria-expanded=false] nav{display:none}.site-header .mobile-menu nav a{color:var(--ink)}
 .ta-header-top>.mobile-menu{display:none}@media(max-width:900px){.ta-header-top>.mobile-menu{display:block}}
+
+/* BRABUS / MANSORY: photographic marque dossiers inside TAIGAUTO's parts index. */
+:root{--tuning-ground:#11171c;--tuning-ink:#f5f6f7;--tuning-muted:#c4ccd2;--tuning-surface:#202a32;--tuning-soft:#eef0f2;--tuning-accent:#b63227}
+.tuning-home{background:var(--tuning-ground);color:var(--tuning-ink)}
+.tuning-home p{font-size:17px;line-height:1.65}
+.tuning-home h2,.tuning-home h3{font-weight:500;letter-spacing:-.025em;line-height:1.08}
+.tuning-home a:focus-visible,.tuning-home button:focus-visible{outline-color:var(--tuning-ink)}
+.tuning-home .action:hover{background:var(--tuning-ink);color:var(--tuning-ground)}
+.tuning-opening{padding-top:52px}
+.tuning-opening-copy{display:flex;justify-content:space-between;align-items:center;gap:48px;margin-bottom:42px}
+.tuning-opening h1{font-size:clamp(40px,4.8vw,70px);line-height:1.04;letter-spacing:-.035em;font-weight:500;margin:0;max-width:13ch}
+.tuning-opening-copy>div{max-width:390px}
+.tuning-opening-copy p{font-size:24px;line-height:1.4;margin:0 0 22px;max-width:26ch}
+.tuning-hero-photo{height:clamp(340px,39vw,540px);background:var(--tuning-surface)}
+.tuning-hero-photo img{object-fit:cover;object-position:center 54%}
+.tuning-image-caption{display:flex;justify-content:space-between;gap:24px;padding-top:16px}
+.tuning-image-caption p,.tuning-model-caption{margin:0;font-size:15px;color:var(--tuning-muted)}
+.tuning-finder{display:grid;grid-template-columns:.85fr 1.4fr;align-items:center;gap:64px;padding-top:70px;padding-bottom:82px}
+.tuning-finder h2{font-size:30px;margin:0 0 14px}
+.tuning-finder p{margin:0;max-width:36ch;color:var(--tuning-muted)}
+.tuning-finder form{display:grid;grid-template-columns:1fr 1.2fr auto;gap:16px;align-items:end}
+.tuning-finder label{display:grid;gap:10px;font-size:15px;min-width:0}
+.tuning-finder select{appearance:auto;min-height:52px;width:100%;padding:12px;background:var(--tuning-ink);color:var(--tuning-ground);border:0;border-radius:0;font-size:16px}
+.tuning-finder .action{justify-content:center;white-space:nowrap}
+.tuning-marque{padding:60px 0 66px}
+.tuning-marque-intro{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:start;margin-bottom:38px}
+.tuning-marque-intro h2{font-size:clamp(54px,8.3vw,120px);font-weight:400;letter-spacing:-.04em;line-height:.95;margin:0}
+.tuning-marque-intro h3{font-size:27px;margin:0 0 16px;max-width:24ch}
+.tuning-marque-intro p{margin:0 0 16px;max-width:50ch;color:var(--tuning-muted)}
+.tuning-marque-intro a{display:inline-flex;align-items:center;min-height:44px;font-size:16px}
+.tuning-marque-photo{aspect-ratio:16/8.4;background:var(--tuning-surface)}
+.tuning-model-caption{padding-top:16px}
+.tuning-detail-pair{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:start;gap:28px;margin-top:40px}
+.tuning-detail{text-decoration:none;min-width:0}
+.tuning-detail .gallery-image{aspect-ratio:4/3;background:var(--tuning-surface)}
+.tuning-detail img{transition:transform .25s ease-out}
+.tuning-detail:hover img{transform:scale(1.025)}
+.tuning-detail h3{font-size:24px;margin:20px 0 8px}
+.tuning-detail span{display:block;font-size:15px;color:var(--tuning-muted);line-height:1.5}
+.tuning-detail:hover h3{text-decoration:underline;text-underline-offset:5px}
+.tuning-marque-mansory{padding-top:82px}
+.tuning-marque-mansory .tuning-detail-pair{grid-template-columns:1.25fr 1fr 1fr}
+.tuning-brief{display:grid;grid-template-columns:1fr 1fr;gap:10vw;padding-top:100px;padding-bottom:100px}
+.tuning-brief h2{font-size:clamp(36px,4.2vw,60px);max-width:12ch;margin:0 0 25px}
+.tuning-brief p{max-width:46ch;margin:0 0 28px;color:var(--tuning-muted)}
+.tuning-brief dl{margin:0;display:grid;gap:30px;align-content:start}
+.tuning-brief dt{font-size:22px;font-weight:500;margin:0 0 10px}
+.tuning-brief dd{margin:0;font-size:17px;line-height:1.65;color:var(--tuning-muted);max-width:44ch}
+.tuning-components{display:grid;grid-template-columns:1fr 1fr;gap:10vw;padding-top:28px;padding-bottom:100px}
+.tuning-components h2{font-size:30px;max-width:20ch;margin:0 0 20px}
+.tuning-components p{max-width:45ch;color:var(--tuning-muted);margin:0 0 18px}
+.tuning-components>div>a{display:inline-flex;align-items:center;min-height:44px}
+.tuning-component-links{display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;align-content:start}
+.tuning-component-links a{display:flex;font-size:16px;line-height:1.4;text-decoration:none;padding:8px 0}
+.tuning-component-links a:hover{text-decoration:underline}
+.collection-category{display:grid;gap:10px;font-size:15px;margin-top:26px}
+.collection-category select{width:100%;min-width:0;border:1px solid #89929a;background:var(--paper);color:var(--ink);padding:12px 10px;min-height:48px;border-radius:0;font-size:16px}
+.collection-fitment-note{font-size:15px;line-height:1.65;margin-top:28px;color:#4f5c67}
+.tuning-explorer .collection-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:50px 28px}
+.tuning-explorer .collection-entry-copy h2{font-size:25px}
+.tuning-explorer .collection-entry-copy p{font-size:16px}
+.tuning-explorer .collection-entry-copy>a{display:inline-flex;align-items:center;min-height:44px;font-size:16px}
+.tuning-explorer .collection-filters button{font-size:16px}
+.tuning-service-intro{font-size:22px;line-height:1.5;max-width:42ch}
+.tuning-scope{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin:50px 0 70px}
+.tuning-scope>article{padding:32px;background:var(--tuning-soft)}
+.tuning-scope h2{font-size:32px;margin:0 0 18px}
+.tuning-scope p,.tuning-scope li{font-size:17px;line-height:1.7}
+.tuning-scope ul{padding-left:20px}
+.tuning-scope a{display:inline-flex;align-items:center;min-height:44px}
+.tuning-service-note{font-size:16px;line-height:1.7;max-width:78ch;margin:35px 0}
+.ta-navigation nav a{min-height:44px;display:inline-flex;align-items:center}
+.ta-header-top .brand{flex-shrink:0}
+.inquiry-form input,.inquiry-form textarea,.collection-search input{caret-color:var(--accent)}
+@media(max-width:1000px){.tuning-opening-copy{gap:32px}.tuning-opening h1{font-size:54px}.tuning-opening-copy p{font-size:21px}.tuning-finder{grid-template-columns:1fr;gap:28px}.tuning-finder form{max-width:800px}.tuning-marque-intro{gap:40px}.tuning-marque-intro h3{font-size:25px}.tuning-brief,.tuning-components{gap:6vw}.tuning-explorer .collection-grid{gap:40px 22px}}
+@media(max-width:700px){
+.tuning-opening{padding-top:34px}.tuning-opening-copy{display:block;margin-bottom:30px}.tuning-opening h1{font-size:clamp(40px,8.6vw,54px);max-width:15ch;margin-bottom:24px}.tuning-opening-copy p{font-size:20px;max-width:28ch;margin-bottom:20px}.tuning-hero-photo{height:auto;aspect-ratio:4/3}.tuning-hero-photo img{object-position:center}.tuning-image-caption{display:block;padding-top:14px}.tuning-image-caption p{font-size:14px}.tuning-image-caption p+p{margin-top:5px}
+.tuning-finder{padding-top:48px;padding-bottom:50px;gap:24px}.tuning-finder h2{font-size:28px}.tuning-finder form{grid-template-columns:1fr 1fr;gap:18px 12px}.tuning-finder .action{grid-column:1/-1}.tuning-marque{padding-top:42px;padding-bottom:30px}.tuning-marque-intro{grid-template-columns:1fr;gap:26px;margin-bottom:28px}.tuning-marque-intro h2{font-size:clamp(56px,13vw,90px)}.tuning-marque-intro h3{font-size:27px;max-width:25ch}.tuning-marque-mansory{padding-top:66px}.tuning-marque-photo{aspect-ratio:4/3}
+.tuning-detail-pair,.tuning-marque-mansory .tuning-detail-pair{grid-template-columns:1fr;gap:32px;margin-top:28px}.tuning-detail{display:grid;grid-template-columns:1.1fr 1fr;gap:20px;align-items:center}.tuning-detail .gallery-image{aspect-ratio:1/1}.tuning-detail h3{font-size:23px;margin:0 0 12px}.tuning-detail span{font-size:15px}
+.tuning-brief{grid-template-columns:1fr;gap:40px;padding-top:64px;padding-bottom:70px}.tuning-brief h2{font-size:40px;max-width:15ch}.tuning-brief dl{gap:25px}.tuning-components{grid-template-columns:1fr;gap:30px;padding-top:15px;padding-bottom:65px}.tuning-components h2{font-size:30px}.tuning-component-links{gap:5px 20px}
+.tuning-explorer .collection-grid{grid-template-columns:1fr;gap:40px}.tuning-explorer .collection-entry-copy h2{font-size:26px}.collection-fitment-note{margin:22px 0 0}.collection-category{margin-top:20px}.tuning-explorer .collection-filters button{font-size:15px}.tuning-scope{grid-template-columns:1fr;gap:22px;margin:35px 0 45px}.tuning-scope>article{padding:25px}.ta-navigation nav{gap:18px;font-size:14px}.ta-navigation>.container-page{min-height:52px}.ta-navigation nav a{line-height:1.3}
+}
+@media(max-width:360px){.tuning-detail{gap:15px}.tuning-detail h3{font-size:21px}.tuning-finder form{grid-template-columns:1fr}.tuning-opening h1{font-size:37px}.ta-navigation nav{gap:15px;font-size:13px}}
+@media(prefers-reduced-motion:reduce){.tuning-detail img{transition:none}.tuning-detail:hover img{transform:none}}
+.tuning-hero-photo{background:#fff}.tuning-hero-photo img{object-fit:contain}
+.tuning-wheel{background:#fff!important}.tuning-wheel img{object-fit:contain}
+.tuning-scope>div p{font-size:17px;line-height:1.7;margin:0 0 20px}.tuning-scope>h2{font-size:32px;margin:0}
+@media(max-width:700px){.tuning-finder form{grid-template-columns:1fr}.tuning-finder .action{grid-column:auto}}
+.tuning-product-shot{background:#fff!important}.tuning-product-shot img{object-fit:contain}
+.tuning-explorer .collection-entry-copy .collection-application{font-weight:500;margin-bottom:7px}
+.tuning-explorer .collection-entry-copy .collection-reference{font-size:15px;margin-bottom:14px;overflow-wrap:anywhere}

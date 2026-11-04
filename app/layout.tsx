@@ -7,25 +7,25 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "TAIGAUTO | Automotive Components & Trade",
+    default: "TAIGAUTO | BRABUS & MANSORY Parts",
     template: "%s | TAIGAUTO"
   },
-  description: "TAIGAUTO CO., LTD. is an Ontario company positioned for automotive component sourcing, supplier coordination, and cross-border trade conversations.",
-  keywords: ["automotive components Canada", "auto parts sourcing", "Ontario automotive trade", "automotive supplier coordination", "cross-border auto parts", "TAIGAUTO"],
+  description: "BRABUS and MANSORY modification parts, automotive component sourcing, and trade coordination from TAIGAUTO CO., LTD. in Hamilton, Ontario, Canada.",
+  keywords: ["BRABUS parts", "MANSORY parts", "modification parts Canada", "carbon fiber body parts", "forged wheels", "automotive component sourcing", "TAIGAUTO"],
   openGraph: {
-    title: "TAIGAUTO | Automotive Components & Trade",
-    description: "A clear starting point for automotive component sourcing, supplier coordination, and trade conversations.",
+    title: "TAIGAUTO | BRABUS & MANSORY Parts",
+    description: "Explore BRABUS and MANSORY modification parts and discuss your vehicle requirements with TAIGAUTO.",
     url: site.url,
     siteName: site.name,
-    images: [{ url: "/photos/workshop.webp", width: 1536, height: 1024, alt: "TAIGAUTO automotive component supply workspace" }],
+    images: [{ url: "/brands/brabus-widestar-exterior.webp", width: 1387, height: 780, alt: "BRABUS WIDESTAR exterior styling and wheels" }],
     locale: "en_US",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "TAIGAUTO | Automotive Components & Trade",
-    description: "A clear starting point for automotive component sourcing, supplier coordination, and trade conversations.",
-    images: ["/photos/workshop.webp"]
+    title: "TAIGAUTO | BRABUS & MANSORY Parts",
+    description: "Explore BRABUS and MANSORY modification parts and discuss your vehicle requirements with TAIGAUTO.",
+    images: ["/brands/brabus-widestar-exterior.webp"]
   },
   alternates: {
     canonical: site.url
@@ -40,7 +40,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     legalName: site.legalName,
     url: site.url,
     email: site.email,
-    description: "Ontario company positioned for automotive component sourcing, supplier coordination, and cross-border trade conversations.",
+    description: "BRABUS and MANSORY modification parts, automotive component sourcing, and trade coordination from Hamilton, Ontario, Canada.",
     areaServed: ["Canada", "United States"]
   };
 

@@ -7,9 +7,9 @@ export const site = {
 };
 
 export const navItems = [
+  { label: "Products & parts", href: "/showcase" },
+  { label: "Sourcing support", href: "/services" },
   { label: "Company", href: "/about" },
-  { label: "Capabilities", href: "/services" },
-  { label: "Component Index", href: "/showcase" },
   { label: "Contact", href: "/contact" },
 ];
 
